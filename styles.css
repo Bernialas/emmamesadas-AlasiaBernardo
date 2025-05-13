@@ -1,0 +1,310 @@
+@charset "UTF-8";
+body {
+  background-color: #E6DFD9;
+}
+
+.formatoFondo {
+  padding: 10px;
+}
+
+.container-fluid {
+  background-color: #729599;
+  width: 100%;
+}
+
+.navbar-brand {
+  margin-left: 10%;
+}
+
+.navbar-nav {
+  margin-right: 10%;
+}
+
+.header-con-iconos {
+  position: relative;
+}
+
+.iconos-en-header {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  margin-right: 10%;
+}
+
+.nav-item {
+  background-color: #BCC5CE;
+  font-family: Sans-serif;
+  font-weight: bold;
+  color: #7A7067;
+  margin: 3px 10px;
+  padding: 0 10px;
+  font-size: large;
+  border: solid 1px black;
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+}
+
+.nav-item:hover {
+  background-color: rgba(188, 197, 206, 0.6549019608);
+  transform: scale(1.1);
+}
+
+@media (max-width: 991.98px) {
+  .custom-navbar-collapse {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    backdrop-filter: blur(10px);
+    background-color: #729599;
+    border: 1px solid #333;
+    border-radius: 5px;
+    width: auto;
+    min-width: 200px; /* o el tamaño que quieras */
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+  }
+}
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  margin: 15px;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(51, 51, 51, 0.5019607843);
+  border-radius: 35%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 90% 90%;
+  background-color: transparent;
+  filter: invert(1); /* Blanco*/
+}
+
+main {
+  margin: 0 10%;
+  background-color: #E6DFD9;
+  color: #7A7067;
+  overflow: hidden;
+}
+
+footer {
+  margin: 10px;
+  background-color: #729599;
+}
+
+.contacto-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.contacto-footer-link {
+  padding: 10px 20px;
+  font-size: large;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #BCC5CE;
+  color: #333;
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+  display: flex;
+  margin-left: 10%;
+  margin-top: 10px;
+}
+.contacto-footer-link:hover {
+  background-color: rgb(217.4568965517, 222.5, 227.5431034483);
+  transform: scale(1.1);
+  color: black;
+}
+
+.contacto-footer-link:hover {
+  background-color: rgba(188, 197, 206, 0.6549019608);
+  color: black;
+  transform: scale(1.1);
+}
+
+.contenedor-iconos {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10%;
+}
+
+.icono-redes {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+  gap: 10px;
+  align-items: center;
+}
+
+.icono-redes li img {
+  width: 30px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.icono-redes li img:hover {
+  transform: scale(1.1);
+}
+
+.info-footer {
+  margin-left: 9%;
+  color: #333;
+  list-style: none;
+  font-size: large;
+  font-weight: bold;
+}
+
+.mapa {
+  width: 100%;
+}
+
+/* Contenedor principal del formulario */
+.formulario-contacto {
+  max-width: 600px; /* Limita el ancho del formulario a 600px */
+  margin: 0 auto; /* Centra el formulario horizontalmente */
+  display: flex; /* Usa flexbox para organizar en columna */
+  flex-direction: column; /* Los elementos se apilan verticalmente */
+  gap: 15px; /* Espacio entre cada grupo de campos */
+  font-family: Sans-serif; /* Fuente limpia y legible */
+}
+
+/* Grupo de campos (etiqueta + input) */
+.grupo {
+  display: flex; /* Organiza los hijos con flex */
+  flex-direction: column; /* Pone la etiqueta arriba del input */
+}
+
+/* Estilos para los inputs de texto y el textarea */
+.grupo input,
+.mensaje-area textarea {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  padding: 8px; /* Espacio interno para mejor legibilidad */
+  box-sizing: border-box; /* Incluye el padding dentro del ancho */
+}
+
+.input-form {
+  transition: transform 0.2s ease;
+}
+
+.input-form:hover {
+  transform: scale(1.02);
+}
+
+/* Contenedor para mensaje + botón "Enviar" */
+.grupo-flex {
+  display: flex; /* Ubica el textarea y el botón en línea */
+  gap: 10px; /* Espacio entre el mensaje y el botón */
+  align-items: flex-start; /* Alinea arriba (top) el botón con el textarea */
+}
+
+/* Contenedor del textarea */
+.mensaje-area {
+  flex: 1; /* Ocupa todo el espacio disponible */
+  display: flex; /* Para apilar etiqueta y textarea */
+  flex-direction: column;
+}
+
+/* Contenedor del botón */
+.boton-enviar {
+  padding-top: 22px; /* Ajusta el botón a la altura del inicio del textarea */
+}
+
+/* Estilo del botón de envío */
+.boton-enviar input[type=submit] {
+  padding: 10px 20px;
+  font-size: large;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #BCC5CE;
+  color: #333;
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+.boton-enviar input[type=submit]:hover {
+  background-color: rgb(217.4568965517, 222.5, 227.5431034483);
+  transform: scale(1.1);
+  color: black;
+}
+
+.boton-enviar input[type=submit]:hover {
+  transform: scale(1.1);
+}
+
+.titulo-productos {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px 50px;
+}
+
+.col {
+  height: 100%;
+}
+
+.card {
+  height: 100%;
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-img-top-servicios {
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contendor-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.contenedor-parrafo {
+  color: #333;
+  width: 50%;
+  padding-right: 10px;
+}
+
+.contenedor-imagen {
+  width: 50%;
+}
+
+.contenedor-imagen img {
+  max-width: 100%;
+  height: auto;
+}
+
+h4 {
+  color: #7A7067;
+}
+
+/*# sourceMappingURL=styles.css.map */
