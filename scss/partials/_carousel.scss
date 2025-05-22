@@ -1,0 +1,21 @@
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    margin: 15px;
+    width: 60px;
+    height: 60px;
+    background-color: nth($list: $color, $n: 7);
+    border-radius: 35%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size: 90% 90%;
+    background-color: transparent;
+    filter: invert(1); /* Blanco*/
+}

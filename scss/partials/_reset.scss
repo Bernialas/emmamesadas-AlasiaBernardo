@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: nth($list: $color, $n: 1);
+    color: nth($list: $color, $n: 4);
+}

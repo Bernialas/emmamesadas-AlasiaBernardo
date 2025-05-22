@@ -1,0 +1,21 @@
+.contenedor-iconos{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+}
+.icono-redes{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    gap: 10px;
+    align-items: center;
+}
+.icono-redes li img{
+    width: 30px;
+    height: auto;
+    transition: transform 0.2s ease;
+}
+.icono-redes li img:hover{
+    transform: scale(1.1);
+}

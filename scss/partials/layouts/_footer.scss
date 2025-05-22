@@ -1,0 +1,32 @@
+footer{
+    margin: 10px;
+    background-color: nth($list: $color, $n: 2);
+}
+.contacto-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.contacto-footer-link{
+    @include boton-estandar(nth($color, 3), nth($color, 6));
+    display: flex;
+    margin-left: 10%;
+    margin-top: 10px
+}
+.contacto-footer-link:hover{
+    background-color: nth($list: $color, $n: 5);
+    color: black;
+    transform: scale(1.1);
+}
+
+.info-footer{
+    margin-left: 9%;
+    color: nth($list: $color, $n: 6);
+    list-style: none;
+    font-size: large;
+    font-weight: bold;
+}
+.mapa{
+    width: 100%;
+}

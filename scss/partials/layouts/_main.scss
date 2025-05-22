@@ -1,0 +1,12 @@
+main{
+    margin: 0 10%;
+    background-color: nth($list: $color, $n: 1);
+    color: nth($list: $color, $n: 4);
+    overflow: hidden;
+}
+h4 {
+    color: nth($list: $color, $n: 4);
+}
+.formatoFondo{
+    padding: 10px;
+}
