@@ -1,14 +1,33 @@
 @use "../variables" as v;
 @use "../mixins";
-footer{
-    margin: 10px;
-    background-color: nth($list: v.$color, $n: 2);
-}
-.contacto-footer{
+.footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    align-items: flex-start;
+    padding: 2rem;
+    background-color: nth($list: v.$color, $n: 2);
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    flex: 1 1 300px;
+    margin: 1rem;
+}
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer-left .contacto-footer-link {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: nth($list: v.$color, $n: 6);
+    background-color: nth($list: v.$color, $n: 3);
+    border-radius: 5px;
 }
 .contacto-footer-link{
     @include mixins.boton-estandar(nth(v.$color, 3), nth(v.$color, 6));
@@ -22,13 +41,20 @@ footer{
     transform: scale(1.1);
 }
 
-.info-footer{
-    margin-left: 9%;
-    color: nth($list: v.$color, $n: 6);
+.info-footer {
     list-style: none;
-    font-size: large;
+    padding: 0;
+    margin: 0;
+    margin-top: 2rem;
+    margin-left: 90px;
+    color: nth($list: v.$color, $n: 6);
+    font-size: larger;
     font-weight: bold;
 }
 .mapa{
     width: 100%;
+    max-width: 680px;
+    height: 300px;
+    border: 0;
+    margin-left: 10px;
 }
