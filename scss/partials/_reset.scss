@@ -1,3 +1,5 @@
+@use "./variables";
+
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +7,6 @@
 }
 
 body{
-    background-color: nth($list: $color, $n: 1);
-    color: nth($list: $color, $n: 4);
+    background-color: nth($list: variables.$color, $n: 1);
+    color: nth($list: variables.$color, $n: 4);
 }

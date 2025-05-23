@@ -1,3 +1,4 @@
+@use "./variables" as v;
 .carousel-item img {
     height: 500px;
     object-fit: cover;
@@ -8,7 +9,7 @@
     margin: 15px;
     width: 60px;
     height: 60px;
-    background-color: nth($list: $color, $n: 7);
+    background-color: nth($list: v.$color, $n: 7);
     border-radius: 35%;
     top: 50%;
     transform: translateY(-50%);

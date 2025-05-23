@@ -1,12 +1,28 @@
+@use "../variables" as v;
 main{
     margin: 0 10%;
-    background-color: nth($list: $color, $n: 1);
-    color: nth($list: $color, $n: 4);
+    background-color: nth($list: v.$color, $n: 1);
+    color: nth($list: v.$color, $n: 4);
     overflow: hidden;
 }
-h4 {
-    color: nth($list: $color, $n: 4);
+.subtitulo {
+    color: nth($list: v.$color, $n: 4);
+}
+h2 {
+    color: nth($list: v.$color, $n: 4);
 }
 .formatoFondo{
-    padding: 10px;
+    flex: 1;
+    max-width: 50%;
+}
+.contenedor-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+.mapa-container {
+    flex: 1;
+    max-width: 50%;
+    text-align: right;
 }

@@ -1,3 +1,4 @@
+@use "./variables" as v;
 .col{
     height: 100%;
 }
@@ -30,7 +31,7 @@
     border: 1px solid black;
 }
 .contenedor-parrafo{
-    color: nth($list: $color, $n: 6);
+    color: nth($list: v.$color, $n: 6);
     width: 50%;
     padding-right: 10px;
 }

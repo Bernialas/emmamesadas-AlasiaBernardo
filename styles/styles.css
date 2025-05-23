@@ -1,10 +1,13 @@
 @charset "UTF-8";
-body {
-  background-color: #E6DFD9;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.formatoFondo {
-  padding: 10px;
+body {
+  background-color: #E6DFD9;
+  color: #7A7067;
 }
 
 .container-fluid {
@@ -66,34 +69,62 @@ body {
     z-index: 1000;
   }
 }
-.carousel-item img {
-  height: 500px;
-  object-fit: cover;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  margin: 15px;
-  width: 60px;
-  height: 60px;
-  background-color: rgba(51, 51, 51, 0.5019607843);
-  border-radius: 35%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-size: 90% 90%;
-  background-color: transparent;
-  filter: invert(1); /* Blanco*/
-}
-
 main {
   margin: 0 10%;
   background-color: #E6DFD9;
   color: #7A7067;
   overflow: hidden;
+}
+
+.subtitulo {
+  color: #7A7067;
+}
+
+h2 {
+  color: #7A7067;
+}
+
+.formatoFondo {
+  flex: 1;
+  max-width: 50%;
+}
+
+.contenedor-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.mapa-container {
+  flex: 1;
+  max-width: 50%;
+  text-align: right;
+}
+
+.contenedor-iconos {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10%;
+}
+
+.icono-redes {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+  gap: 10px;
+  align-items: center;
+}
+
+.icono-redes li img {
+  width: 30px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.icono-redes li img:hover {
+  transform: scale(1.1);
 }
 
 footer {
@@ -134,31 +165,6 @@ footer {
   transform: scale(1.1);
 }
 
-.contenedor-iconos {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 10%;
-}
-
-.icono-redes {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 10px;
-  gap: 10px;
-  align-items: center;
-}
-
-.icono-redes li img {
-  width: 30px;
-  height: auto;
-  transition: transform 0.2s ease;
-}
-
-.icono-redes li img:hover {
-  transform: scale(1.1);
-}
-
 .info-footer {
   margin-left: 9%;
   color: #333;
@@ -171,6 +177,29 @@ footer {
   width: 100%;
 }
 
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  margin: 15px;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(51, 51, 51, 0.5019607843);
+  border-radius: 35%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 90% 90%;
+  background-color: transparent;
+  filter: invert(1); /* Blanco*/
+}
+
 /* Contenedor principal del formulario */
 .formulario-contacto {
   max-width: 600px; /* Limita el ancho del formulario a 600px */
@@ -179,6 +208,14 @@ footer {
   flex-direction: column; /* Los elementos se apilan verticalmente */
   gap: 15px; /* Espacio entre cada grupo de campos */
   font-family: Sans-serif; /* Fuente limpia y legible */
+}
+
+.input-form {
+  transition: transform 0.2s ease;
+}
+
+.input-form:hover {
+  transform: scale(1.02);
 }
 
 /* Grupo de campos (etiqueta + input) */
@@ -193,14 +230,6 @@ footer {
   width: 100%; /* Ocupa todo el ancho del contenedor */
   padding: 8px; /* Espacio interno para mejor legibilidad */
   box-sizing: border-box; /* Incluye el padding dentro del ancho */
-}
-
-.input-form {
-  transition: transform 0.2s ease;
-}
-
-.input-form:hover {
-  transform: scale(1.02);
 }
 
 /* Contenedor para mensaje + botón "Enviar" */
@@ -243,12 +272,6 @@ footer {
 
 .boton-enviar input[type=submit]:hover {
   transform: scale(1.1);
-}
-
-.titulo-productos {
-  text-align: center;
-  margin-bottom: 40px;
-  padding: 20px 50px;
 }
 
 .col {
@@ -301,10 +324,6 @@ footer {
 .contenedor-imagen img {
   max-width: 100%;
   height: auto;
-}
-
-h4 {
-  color: #7A7067;
 }
 
 /*# sourceMappingURL=styles.css.map */

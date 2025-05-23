@@ -1,5 +1,6 @@
+@use "../variables" as v;
 .container-fluid{
-    background-color: nth($list: $color, $n: 2);
+    background-color: nth($list: v.$color, $n: 2);
     width: 100%;
 }
 .navbar-brand{
@@ -19,10 +20,10 @@
 }
 
 .nav-item{
-    background-color: nth($list: $color, $n: 3);
-    font-family: nth($list: $font, $n: 3);
+    background-color: nth($list: v.$color, $n: 3);
+    font-family: nth($list: v.$font, $n: 3);
     font-weight: bold;
-    color: nth($list: $color, $n: 4);
+    color: nth($list: v.$color, $n: 4);
     margin: 3px 10px;
     padding: 0 10px;
     font-size: large;
@@ -31,7 +32,7 @@
     transition: transform 0.2s ease;
 }
 .nav-item:hover{
-    background-color: nth($list: $color, $n: 5);
+    background-color: nth($list: v.$color, $n: 5);
     transform: scale(1.1);
 }
 
@@ -41,8 +42,8 @@
         right: 0;
         top: 100%;
         backdrop-filter: blur(10px);
-        background-color: nth($list: $color, $n: 2);
-        border: 1px solid nth($list: $color, $n: 6);
+        background-color: nth($list: v.$color, $n: 2);
+        border: 1px solid nth($list: v.$color, $n: 6);
         border-radius: 5px;
         width: auto;
         min-width: 200px; /* o el tamaño que quieras */
