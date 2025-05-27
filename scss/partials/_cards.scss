@@ -31,7 +31,6 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    border: 1px solid black;
 
     @media (max-width: 768px) {
         flex-direction: column;
@@ -39,15 +38,11 @@
         text-align: center;
     }
 }
-
-
 .contenedor-parrafo{
     flex: 1;
     color: nth($list: v.$color, $n: 6);
     width: 50%;
-    padding-top: 20px;
-    padding-right: 40px;
-    padding-left: 190px;
+    padding: 10px 40px 40px 50px;
 
     @media (max-width: 768px) {
         width: 100%;
@@ -55,18 +50,14 @@
 }
 .contenedor-imagen{
     width: 50%;
-    padding-top: 20px;
-    padding-right: 190px;
-    padding-left: 40px;
-    padding-bottom: 50px;
+    padding: 20px 50px 50px 40px;
     flex: 1;
+    display: flex;
+    justify-content: center;
 
     img {
-        max-width: 100%;
+        max-width: 500px;
+        width: 100%;
         height: auto;
     }
-}
-.contenedor-imagen img{
-    max-width: 100%;
-    height: auto;
 }
